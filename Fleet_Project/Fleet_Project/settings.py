@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Car_Dealer_App',
+    'Customer_Portal',
+    'Home',
 ]
 
 MIDDLEWARE = [
