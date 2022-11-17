@@ -1,5 +1,5 @@
-from django.urls import path,include
-from Car_Dealer_App.views import *
+from django.urls import include
+from Customer_Portal.views import *
 from django.urls import include, re_path
 
 urlpatterns = [
