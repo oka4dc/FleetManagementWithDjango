@@ -9,9 +9,9 @@
 </style>
 <div class="w3-bar w3-large w3-black">
   <div class="w3-bar-item w3-left w3-black w3-allerta">Customer Page: {{user.username}}</div>
-  <a class="w3-bar-item w3-btn w3-round-xlarge w3-allerta w3-white w3-right" href="/customer_portal/logout/">logout</a>
-  <a class="w3-bar-item w3-btn w3-white w3-round-xlarge w3-allerta w3-right" href="/customer_portal/manage/">Manage</a>
-  <a class="w3-ber-item w3-btn w3-white w3-round-xlarge w3-allerta w3-right" href="/customer_portal/search/">Search for vehicles</a>
+  <a class="w3-bar-item w3-btn w3-round-xlarge w3-allerta w3-white w3-right" href="/customer/logout/">logout</a>
+  <a class="w3-bar-item w3-btn w3-white w3-round-xlarge w3-allerta w3-right" href="/customer/manage/">Manage</a>
+  <a class="w3-ber-item w3-btn w3-white w3-round-xlarge w3-allerta w3-right" href="/customer/search/">Search for vehicles</a>
 </div>
 
 <h4 class="w3-center w3-allerta " style="padding-top:50">Search Results</h4>
@@ -27,7 +27,7 @@
       <td style="padding:10" class="w3-serif">capacity: {{vehicle.capacity}}</td>
       <td style="padding:10" class="w3-serif">description: {{vehicle.description}}</td>
       <td style="padding:10" class="w3-serif">pincode: {{vehicle.pincode}}</td>
-      <td style="padding:10"><form action = "/customer_portal/rent/" method="post">
+      <td style="padding:10"><form action = "/customer/rent/" method="post">
           {% csrf_token %}
           <input type="hidden" name="id" value="{{vehicle.id}}">
           <input class="w3-btn w3-round-xxlarge w3-allerta w3-black" type="submit" value="rent">
